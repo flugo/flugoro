@@ -1,0 +1,908 @@
+	#content-main input {
+	border-radius: 5px;
+}
+#section-content {
+	color: #5b5b5b;
+}
+#content-sidebar-left {
+	width: 244px;
+	margin-right: 16px;
+}
+
+.login-popup {
+	width: 605px;
+	height: 330px;
+	position: fixed;
+	top: 50%;
+	margin-left: -302.5px;
+	margin-top: -175px;
+	left: 50%;
+	z-index: 9999;
+	background: #EFF3F4;
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	font-size: 15px;
+	display: none;
+}
+
+.login-popup-in.popup-title,
+.login-popup-in.social,
+.login-popup-in.fields,
+.login-popup-in.popup-footer {
+	z-index: 9999;
+}
+
+.login-popup-in.popup-title {
+	font-size: 21px;
+	padding-bottom: 15px;
+	margin-bottom: 18px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.login-popup-in.fields {
+	margin-bottom: 18px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.login-popup-in.social {
+	margin-bottom: 13px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.field-input-popup {
+	width: 262px;
+	height: 30px;
+}
+
+.fields.email {
+	float: left;
+	margin-left: 5px;
+	margin-right: 31px;
+}
+
+.fields.email, .fields.password {
+	margin-bottom: 15px;
+}
+
+.button-registration {
+	background: #e84044;
+	border-radius: 5px;
+	color: white;
+	padding: 5px;
+	height: 26px;
+	width: 165px;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+.content-main-block-1 {
+	width: 680px;
+	background: #EFF3F4;
+	border-radius: 10px;
+	padding: 15px 15px 9px 15px;
+	margin-bottom: 13px;
+	padding-top: 10px;
+	position: relative;
+}
+.payment-data {
+	overflow: hidden;
+}
+.reg-person {
+	overflow: visible;
+}
+
+.content-main-block-1-text {
+	font-size: 14px;
+}
+
+.language-block li {
+	list-style: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.language-block li:hover {
+	background: white;
+	color: #5282C0;
+}
+
+.language-block ul {
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	z-index: 100;
+	background: #5282C0;
+	border-radius: 5px;
+	color: white;
+	margin-top: 31px;
+	width: 80px;
+	padding: 5px;
+	position: absolute;
+}
+
+.language-block .button-text {
+	background: #5282C0;
+	padding: 5px;
+	border-radius: 5px;
+	width: 80px;
+	color: white;
+}
+
+.t1-row span,
+.t2-row span,
+.t3-row span {
+display: inline-block;
+margin-right: 10px;
+}
+
+.legal-entity {
+display:none;
+}
+
+.text-ne {
+margin-left: 5px;
+}
+
+.name {
+float: left;
+font-size: 16px;
+}
+
+.individual-country .button-text,
+.individual-sector .button-text,
+.language-form .button-text,
+.card-in .button-text,
+.passport-country .button-text,
+.nationality .button-text {
+	background: white;
+	padding: 4px;
+	border-radius: 5px;
+	color: #5b5b5b;
+	border: 1px solid #adadad;
+	height: 19px;
+}
+.nationality .button-text,
+.passport-country .button-text {
+	width: 154px;
+}
+.nationality ul,
+.passport-country ul {
+	min-width: 152px!important;
+}
+.payment-data .legal-entity .individual-country .button-text {
+	width: 129px;
+}
+
+.language-form .button-text {
+	width: 129px;
+	padding: 4px;
+}
+.payment-data .legal-entity .individual-sector .button-text {
+	width: 154px;
+}
+.payment-data .legal-entity .t2-row input {
+	
+}
+.individual-country img,
+.individual-sector  img,
+.language-form img,
+.res-person-type img,
+.card-in img,
+.passport-country img,
+.nationality img {
+	border-left: 1px solid #a4a5a5;
+	padding-bottom: 7px;
+	float: right;
+	margin-top: -35px;
+	padding-top: 10px;
+	padding-left: 8px;
+	padding-bottom: 6px;
+	padding-right: 8px;
+	margin-right: 1px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.res-person-type img {
+border-left: 1px solid #a4a5a5;
+padding-bottom: 7px;
+float: right;
+margin-top: -35px;
+padding-top: 10px;
+padding-left: 8px;
+padding-bottom: 6px;
+padding-right: 8px;
+margin-right: 1px;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+
+.language-form {
+border-radius: 5px;
+}
+
+.language-form:hover {
+	cursor: pointer;
+}
+
+.language-form img {
+	margin-top: -35px;
+	padding-top: 10px;
+	padding-bottom: 6px;
+}
+
+.individual-country ul,
+.individual-sector ul,
+.language-form ul,
+.passport-country ul,
+.nationality ul {
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	z-index: 100;
+	background: white;
+	border-radius: 5px;
+	color: #5b5b5b;
+	margin-top: 1px;
+	min-width: 128px;
+	padding: 5px;
+	border: 1px solid #adadad;
+	list-style: none;
+}
+
+.individual-country ul,
+ {
+	min-width: 152px;
+	min-width: 135px\9;
+}
+
+.original .individual-sector ul {
+	min-width: 127px;
+}
+
+.individual-sector ul {
+	min-width: 152px;
+	min-width: 135px\9;
+}
+
+.legal-entity  .individual-country.button-dropdown ul {
+	min-width: 127px;
+	min-width: 110px\9;
+}
+
+.individual .individual-sector ul {
+	min-width: 127px;
+}
+
+.language-form ul {
+	width: 127px;
+}
+
+.individual-country li,
+.individual-sector li,
+.language-form li,
+.passport-country li,
+.nationality li{
+	padding-left: 5px;
+	margin-left: -5px;
+	padding-right: 5px;
+	margin-right: -5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.individual-country li:first-child,
+.individual-sector li:first-child,
+.language-form li:first-child,
+.passport-country li:first-child,
+.nationality li:first-child {
+	margin-top: -5px;
+	padding-top: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.individual-country li:last-child,
+.individual-sector li:last-child,
+.language-form li:last-child,
+.passport-country li:last-child,
+.nationality li:last-child {
+	margin-bottom: -5px;
+	padding-bottom: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.individual-country li:hover,
+.individual-sector li:hover,
+.language-form li:hover,
+.passport-country li:hover,
+.nationality li:hover {
+	background: #d7d7d7;
+}
+
+.row-inp {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#content-main input[type=text] {
+	height: 25px;
+	width: 142px;
+	font-size: 13px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #5b5b5b;
+}
+
+.expiration-field-d,
+.expiration-field-m,
+.expiration-field-y,
+.birthday-field-d,
+.birthday-field-m,
+.birthday-field-y {
+	border-radius: 0;
+	width: 25px;
+	width: 30px!important;
+	border-radius: 5px;
+}
+
+.birthday-field-m, .birthday-field-d,
+.expiration-field-m, .expiration-field-d {
+width: 24px!important;
+}
+
+.birthday-field-m,
+.expiration-field-m {
+	border-radius: 0!important;
+}
+
+.expiration-field-d,
+.birthday-field-d {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;	
+	border-top-right-radius: 0!important;
+	border-bottom-right-radius: 0!important;
+}
+
+.expiration-field-y,
+.birthday-field-y {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;	
+	border-top-left-radius: 0!important;
+	border-bottom-left-radius: 0!important;
+	width: 25px!important;
+}
+
+.name-a,
+.surname-a {
+	width: 142px!important;
+}
+
+
+.person-type-reg input[type=text] {
+	width: 142px!important;
+}
+
+.individual-country,
+.individual-sector {
+	cursor: pointer;
+}
+
+
+.buttons-add,
+.buttons-add-show,
+.add-payment-data,
+.buttons-remove,
+.buttons-remove-show {
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	cursor: pointer;
+	background: #e84044;
+	padding: 5px;
+	border-radius: 5px;
+	color: white;
+}
+.buttons-add {
+	display: none;
+}
+.buttons-add:hover,
+.buttons-add-show:hover,
+.add-payment-data:hover,
+.buttons-remove:hover,
+.buttons-remove-show:hover {
+	background: #cb3a44;
+}
+
+.row-inp.ffy {
+width: 100%;
+padding-top: 10px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+
+.button-registration {
+	margin-top: 10px;
+}
+
+.button-registration {
+	width: 170px;
+}
+
+.registration-popup .fields {
+	float: left;
+}
+
+.registration-popup .fields.password {
+	margin-left: 5px;
+	margin-right: 31px;
+	margin-bottom: 30px;
+}
+
+.tos-text-accept {
+	display: inline-table;
+}
+
+.registration-popup {
+	height: 340px;
+}
+
+.login-popup-in.popup-title,
+.registration-popup .popup-title {
+	font-size: 21px;
+	padding-bottom: 15px;
+	margin-bottom: 18px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.registration-popup {
+	height: 340px;
+}
+
+.login-popup,
+.registration-popup {
+	width: 605px;
+	height: 350px;
+	position: fixed;
+	top: 50%;
+	margin-left: -302.5px;
+	margin-top: -175px;
+	left: 50%;
+	z-index: 10000;
+	background: #EFF3F4;
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	font-size: 18px;
+	display: none;
+}
+
+.login-popup-in.popup-title,
+.registration-popup .popup-title {
+	font-size: 21px;
+	padding-bottom: 15px;
+	margin-bottom: 18px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.login-popup input,
+.registration-popup input {
+	font-size: 16px;
+	border-radius: 4px;
+}
+
+.language-block:hover {
+	cursor: pointer;
+}
+
+.language-block li {
+	list-style: none;
+	margin-left: -5px;
+	padding-left: 5px;
+	margin-right: -5px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+
+.language-block li:first-child {
+	margin-top: -5px;
+	padding-top: 6px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.language-block li:last-child {
+	margin-bottom: -5px;
+	padding-bottom: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.language-block li:hover {
+	background: #24529b;
+	cursor: pointer;
+	color: white;
+}
+
+.language-block ul {
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	z-index: 100;
+	background: #5282C0;
+	border-radius: 5px;
+	color: white;
+	margin-top: 1px;
+	width: 40px;
+}
+
+.language-block ul {
+	width: 88px;
+	padding: 5px;
+}
+
+.language-block .button-text {
+	background: #5282C0;
+	padding: 4px;
+	border-radius: 5px;
+	width: auto;
+	color: white;
+	padding-bottom: 3px;
+}
+
+.language-block .button-text {
+	width: 90px;
+}
+
+.language-block img {
+	float: right;
+	border-left: 1px solid white;
+	padding-left: 8px;
+	padding-bottom: 7px;
+	margin-top: -26px;
+	padding-top: 8px;
+	padding-right: 8px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px; 
+}
+
+.padding-item {
+margin-bottom: 10px;
+}
+
+.block-socialization-right-icons {
+    padding: 10px;
+}
+.block-socialization-right-icons img {
+    margin-right: 7px;
+}
+img.twitter {
+    margin-right: 0;
+}
+
+ .row-inp.gender {
+width: 155px;
+margin-right: 19px;
+}
+
+.row-inp.gender .text-ne {
+	float: left;
+	margin-left: 0;
+	margin-right: 25px;
+	top: 5px;
+	position: relative;
+}
+
+.button-dropdown img {
+    margin-top: -4px;
+    margin-right: -4px;
+}
+.transfer-type ul,
+.card-in ul {
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	z-index: 100;
+	background: white;
+	border-radius: 5px;
+	color: #5b5b5b;
+	margin-top: 1px;
+	width: 152px;
+	padding: 5px;
+	border: 1px solid #adadad;
+	list-style: none;
+}
+.card-in ul {
+	min-width: 199px;
+	min-width: 182px\9;
+}
+.transfer-type:hover {
+	cursor: pointer;
+}
+.transfer-type {
+width: 164px;
+margin-bottom: 10px;
+}
+.card-in img{
+	border-left: 1px solid #a4a5a5;
+	padding-bottom: 7px;
+	float: right;
+	margin-top: -28px;
+	padding-top: 10px;
+	padding-left: 8px;
+	padding-bottom: 6px;
+	padding-right: 8px;
+	margin-right: 1px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.res-person-type li,
+.card-in li{
+	padding-left: 5px;
+	margin-left: -5px;
+	padding-right: 5px;
+	margin-right: -5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.res-person-type li:first-child,
+.card-in li:first-child {
+	margin-top: -5px;
+	padding-top: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+} 
+.res-person-type li:last-child,
+.card-in li:last-child {
+	margin-bottom: -5px;
+	padding-bottom: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.res-person-type li:hover,
+.card-in li:hover {
+	background: #d7d7d7;
+}
+
+.res-person-type .button-text
+ {
+	width: 199px;
+	background: white;
+	padding: 4px;
+	border-radius: 5px;
+	color: #5b5b5b;
+	border: 1px solid #adadad;
+	height: 19px;
+}
+.res-person-type .button-text {
+	width: 154px;
+}
+.person-type-reg {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c8c8c8;
+	margin-top: -10px;
+}
+.row-inp.gender img {
+    margin-top: 5px;
+}
+.contact-fields input {
+    width: 142px!important;
+}
+.save-button {
+	float: right;
+	position: relative;
+	z-index: 10;
+}
+.row-inp.ffy .text {
+    margin-bottom: 10px;
+	margin-right: 10px;
+	position: relative;
+	z-index: 1;
+	margin-left: 6px;
+}
+.row-inp.ffy .wCheck {
+    margin-right: 5px;
+}
+.additional-people.content-main-block-1 {
+	padding-top: 10px;
+}
+.additional-people .person-title {
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	margin-left: 5px;
+	font-size: 16px;
+}
+.additional-people .padding-item {
+    margin-bottom: 10px;
+}
+.pass-title {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.payment-data {
+	font-size: 14px;
+}
+.payment-data input {
+    width: 142px!important;
+}
+.save-button.red-button:hover {
+	cursor: pointer;
+	background: #cb3a44a;
+}
+.row-inp.row-first {
+    margin-bottom: 10px;
+}
+.row-inp.contact-fields {
+    margin-bottom: 10px;
+}
+.payment-data.content-main-block-1 {
+    padding-top: 10px;
+}
+.person-title,
+.additional-people .title-main,
+.payment-data .title-main {
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #5b5b5b;
+}
+.person-1 {
+    border-bottom: 1px solid #c8c8c8;
+    margin-bottom: 10px;
+    display: none;
+}
+.birttday-field {
+	border-radius: 5px!important;
+}
+.row-inp.gender .text-ne {
+margin-left: 5px;
+}
+.individual-sector .button-text {
+width: 129px;
+}
+.person-type-reg .t2-row {
+margin-top: 10px;
+}
+.additional-people {
+    font-size: 14px;
+}
+.payment-data .t1-row {
+    margin-bottom: 10px;
+}
+.card-nr {
+float: left;
+}
+.card-in.button-dropdown {
+    width: 211px;
+    float: left;
+    margin-left: 23px;
+    margin-right: 22px;
+}
+.apply-card {
+    float: left;
+}
+.apply-card .fid-card-button {
+    margin-left: 10px;
+    border-radius: 5px;
+    background: #e84044;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+	padding-bottom: 6px;
+}
+
+@-moz-document url-prefix() { 
+	.card-in.button-dropdown {
+		margin-left: 26px;
+	}
+}
+
+.fid-card-field {
+width: 144px!important;
+}
+.individual-country .button-text {
+width: 154px;
+}
+.card-in.button-dropdown, .apply-card {
+position: relative;
+top: -3px;
+float: right;
+}
+.card-in.button-dropdown {
+top: -2px\9;
+}
+.block-steps .list-item {
+	padding: 5px;
+	padding-left: 10px;
+	border-radius: 5px;
+	background: #EFF3F4;
+	cursor: pointer;
+}
+.active-block-item {
+	background:  #e84044!important;
+}
+.block-steps .list-item:hover {
+	background: #d7d7d7;
+}
+.active-block-item a {
+	color: white;
+}
+.payment-data .inner-block {
+    display: none;
+}
+.save-button-outer {
+    background: #EFF3F4;
+    overflow: hidden;
+    width: 119px;
+    float: right;
+    padding: 10px;
+    border-radius: 10px;
+}
+.buttons-add-show {
+    margin-left: 5px;
+}
+.add-payment-data {
+    margin-left: 5px;
+}
+.row-title.long-text {
+    font-size: 12px;
+}
+input.payment-inp-leg.individual-iban {
+    width: 117px!important;
+}
+#section-footer {
+	width: 100%;
+}
+.content-main input {
+	position: relative;
+	top: 1px\9;
+}
+.buttons-remove,
+.buttons-remove-show {
+    float: right;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+.add-people {
+    position: relative;
+}
+#content-main {
+	margin-bottom: -140px;
+}
+.individual-country ul {
+    min-width: 152px;
+}
+.ff-card {
+    height: 29px;
+    margin-bottom: 10px;
+}
+.ff-cards {
+    clear: both;
+    height: 29px;
+    margin-bottom: 10px;
+    position: relative;
+    right: 10px;
+    display: none;
+}
+.add-ff-card {
+	display: none;
+}
+.add-p .add-ff-card .wCheck .wCheck,
+.add-p .card-nr .wCheck .wCheck {
+    position: relative;
+    top: 0px;
+}

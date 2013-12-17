@@ -1,0 +1,705 @@
+input {
+border-radius: 5px;
+padding-left: 10px;
+padding-right: 10px;
+}
+#section-content {
+	color: #5b5b5b;
+}
+
+
+.block-steps {
+	width: 258px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	margin-right: 16px;
+}
+
+.login-popup,
+.registration-popup {
+	width: 605px;
+	height: 350px;
+	position: fixed;
+	top: 50%;
+	margin-left: -302.5px;
+	margin-top: -175px;
+	left: 50%;
+	z-index: 9999;
+	background: #EFF3F4;
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	font-size: 18px;
+	display: none;
+}
+
+.login-popup-in.popup-title,
+.registration-popup .popup-title {
+	font-size: 21px;
+	padding-bottom: 15px;
+	margin-bottom: 18px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.login-popup-in.popup-title,
+.login-popup-in.social,
+.login-popup-in.fields,
+.login-popup-in.popup-footer {
+	z-index: 9999;
+}
+
+.login-popup-in.popup-title {
+	font-size: 21px;
+	padding-bottom: 15px;
+	margin-bottom: 18px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.login-popup-in.fields {
+	margin-bottom: 18px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.login-popup-in.social {
+	margin-bottom: 8px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.field-input-popup {
+	width: 262px;
+	height: 30px;
+}
+
+.fields.email {
+	float: left;
+	margin-left: 5px;
+	margin-right: 31px;
+}
+
+.fields.email, .fields.password {
+	margin-bottom: 30px;
+	margin-left: 5px;
+}
+
+.button-registration {
+	background: #e84044;
+	border-radius: 5px;
+	color: white;
+	padding: 5px;
+	height: 26px;
+	font-size: 20px;
+	margin-top: -9px;
+	margin-left: 459px;
+}
+
+.content-main-block-1 {
+	width: 666px;
+	background: #EFF3F4;
+	border-radius: 10px;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 13px;
+}
+
+.cell-1 {
+	width: 170px;
+}
+
+.cell-2 {
+	width: 110px;
+}
+
+.cell-3 {
+	width: 210px;
+}
+
+.cell-4 {
+	width: 168px;
+}
+
+.flight-info,
+.flight-info-detailed-blue,
+.flight-info-detailed-red {
+	font-size: 11px;
+	border-collapse: collapse;
+}
+
+.flight-info-header {
+	font-size: 16px;
+	text-align: left;
+}
+
+.flight-name {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.date-blue-in {
+	font-size: 12px;
+	color: #5584C3;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.date-red-in {
+	font-size: 12px;
+	color: #E94045;
+	font-weight: bold;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.flight-date {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.airport-name {
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-bottom: 2px
+}
+
+.terminal-type {
+	font-family: 'Source Sans Pro', sans-serif;
+	margin-bottom: 2px;
+}
+
+.take-off-time-blue {
+	font-size: 17px;
+	color: #5584C3;
+}
+
+.take-off-time-red {
+	font-size: 17px;
+	color: #E94045;
+}
+
+.flight-icons img {
+	margin: 3px;
+}
+
+.cell-3 {
+	font-family: 'Source Sans Pro', sans-serif;;
+	text-align: center;
+}
+
+.landing-time {
+	font-size: 17px;
+	color: black;
+}
+
+
+.last-row td {
+	border-bottom: 2px solid #C8C8C8;
+}
+
+.stop {
+	border-top: 2px solid #c8c8c8;
+	border-bottom: 2px solid #c8c8c8;
+}
+
+.flight-stop-info {
+	text-align: center;
+}
+
+.flight-stop-info {
+	font-size: 12px;
+	padding-bottom: 7px;
+	padding-top: 7px;
+}
+
+.show-detailed-info-button {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #C8C8C8;
+	border-top: 2px solid #C8C8C8;
+	padding-top: 10px;
+}
+
+.blue-info {
+	font-size: 16px;
+	margin-bottom: 7px;
+	border-bottom: 2px solid #C8C8C8;
+}
+
+.date-blue {
+	color: #5584C3;
+	font-size: 17px;
+}
+
+.date-red {
+	color: #E94045;
+	font-size: 17px;
+}
+
+.red-info {
+	padding-top: 20px;
+}
+
+.last-row td{
+	border-bottom: none;
+}
+
+.show-detailed-info {
+	display: none;
+	border-bottom: 2px solid #c8c8c8;
+}
+
+.blue-plane,
+.red-plane {
+width: 20px!important;
+}
+
+.clock,
+.clock-image {
+	width: 16px;
+}
+
+.data {
+border-collapse: collapse;
+}
+
+.data .second {
+	width: 150px;
+}
+
+.data .third {
+	width: 332px;
+}
+
+.data .cell-3 {
+	font-size: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.data .cell-1 {
+	color: #E94045;
+	width: 150px;
+}
+
+.book-data {
+margin-bottom: 20px;
+}
+
+.passenger-data {
+margin-bottom: 20px;
+margin-top: 10px;
+padding-top: 10px;
+}
+
+.passenger-data .cell-3{
+	text-align: left;
+	width: 460px!important;
+}
+
+.passenger-data .first {
+	width: 308px;
+	max-width: 308px;
+}
+
+.passenger-data .second {
+	width: 50px;
+}
+
+.passenger-data .third {
+	width: 170px;
+}
+
+.passenger-data .fourth {
+	width: 130px;
+}
+
+.book-person-data .first {
+	width: 200px;
+}
+
+.book-person-data .second {
+	width: 220px;
+}
+
+.book-person-data .third {
+	width: 105px;
+}
+
+.book-person-data .fourth {
+	width: 100px;
+}
+
+.book-person-data .cell-3 {
+	text-align: left;
+}
+
+.passenger-data .cell-1 .input-field {
+	font-size: 18px;
+	display: none;
+}
+
+.passenger-data .cell-1 input{
+	height: 10px!important;
+	padding: 5px!important;
+}
+
+.language-block li {
+	list-style: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.language-block li:hover {
+	background: #24529b;
+	color: white;
+}
+
+.language-block ul {
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	z-index: 100;
+	background: #5282C0;
+	border-radius: 5px;
+	color: white;
+	margin-top: 1px;
+	width: 90px;
+	padding: 5px;
+	position: absolute;
+}
+
+.language-block .button-text {
+	background: #5282C0;
+	padding: 4px;
+	border-radius: 5px;
+	width: 90px;
+	color: white;
+}
+
+.language-block img {
+	float: right;
+	border-left: 1px solid white;
+	padding-left: 8px;
+	padding-bottom: 7px;
+	margin-top: -28px;
+	padding-top: 10px;
+	padding-right: 8px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px; 
+}
+
+.login-popup input, .registration-popup input {
+font-size: 16px;
+}
+.login-popup,  .registration-popup{
+color: #5b5b5b;
+}
+.block-socialization-right-icons {
+margin-top: 5px;
+padding: 10px;
+border-radius: 10px;
+font-size: 18px;
+text-align: center;
+}
+.block-socialization-right-icons img {
+margin-right: 7px;
+}
+img.twitter {
+margin-right: 0px;
+}
+#section-content {
+color: #5b5b5b;
+}
+.tos-text-accept {
+	clear: both;
+}
+
+.register-popup-in.fields .fields.repeat-passowrd,
+.register-popup-in.fields .fields.password {
+float: left;
+}
+.register-popup-in.fields .fields.password {
+float: left;
+margin-right:31px;
+}
+.button-registration {
+    margin-left: 212px;
+    margin-top: 10px;
+}
+.login-popup-in.fields .fields.email, .login-popup-in.fields .fields.password{
+	margin-bottom: 26px;
+}
+.cell-2.reservation-status {
+    color: #00F100;
+    width: 245px;
+
+}
+.book-data .cell-3 {
+	text-align: left;
+}
+.book-person-data .cell-3 {
+    width: 100px;
+}
+.book-person-data .cell-4 {
+    width: 100px;
+}
+.book-person-data .cell-2 {
+    width: 253px;
+}
+.book-title, .flight-title {
+margin-bottom: 10px;
+}
+.add-pay-method {
+    background: #e84044;
+    padding: 3px!important;
+    border-radius: 5px;
+    float: left;
+    font-size: 15px!important;
+}
+.add-pay-method:hover {
+	background: #cb3a44;	
+}
+.add-pay-method .text {
+    top: -6px;
+}
+.stop img {
+    position: relative;
+    top: 3px;
+}
+.button-login, .button-registration {
+background: #e84044;
+border-radius: 5px!important;
+color: white!important;
+padding: 5px!important;
+height: 26px!important;
+font-size: 20px!important;
+margin-left: auto!important;
+margin-right: auto!important;
+float: none;
+}
+.flight-id {
+position: relative;
+font-size: 18px;
+}
+.airport-name-blue {
+	color: #5584C3;
+}
+.airport-name-red {
+	color: #E94045;
+}
+.landing-time-red {
+	color: #E94045;
+}
+.landing-time-blue {
+	color: #5584C3;
+}
+.data .cell-1 {
+	width: 330px;
+}
+.data .cell-2 {
+	width: 360px;
+}
+.data .cell-3 {
+	width: 120px;
+}
+.data .cell-4 {
+	width: 120px;
+}
+.passenger-data .cell-4 {
+	width: 155px;
+}
+.flight-info-header {
+	font-weight: bold;
+	border-bottom: 2px solid #C8C8C8;
+}
+.book-info-header,
+.passport-data .header {
+	border-bottom: 2px solid #c8c8c8;
+	font-weight: bold;
+}
+.passenger-data .cell-2 {
+    width: 90px;
+}
+.passport-data .cell-1 {
+    width: 207px;
+}
+.passport-data .cell-2 {
+    width: 116px;
+}
+.passport-data .cell-3 {
+    width: 120px;
+    text-align: left;
+}
+.passport-data .cell-4 {
+    width: 90px;
+    width: 88px\9;
+}
+@-moz-document url-prefix() { 
+  .passport-data .cell-4 {
+     width: 88px;
+  }
+}
+.passport-data .cell-6 {
+    width: 26px;
+}
+.passport-data .second {
+    width: auto;
+}
+.passport-data .third {
+    width: auto;
+}
+.passport-data .cell-6.edit {
+    cursor: pointer;
+}
+.birthday-field-m, .birthday-field-d,
+.expiration-field-m, .expiration-field-d {
+width: 24px!important;
+margin-right: 0px!important;
+}
+.expiration-field-d,
+.birthday-field-d {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;	
+	border-top-right-radius: 0!important;
+	border-bottom-right-radius: 0!important;
+}
+.expiration-field-y,
+.birthday-field-y {
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;	
+	border-top-left-radius: 0!important;
+	border-bottom-left-radius: 0!important;
+	width: 25px!important;
+}
+.expiration-field-m,
+.birthday-field-m {
+	border-radius: 0px;
+}
+.popup-edit {
+	padding: 10px;
+	display: none;
+	background: #EFF3F4;
+	border-radius: 10px;
+	position: fixed;
+	width: 480px;
+	height: 250px;
+	z-index: 1000;
+	top: 50%;
+	left: 50%;
+	margin-top: -125px;
+	margin-left: -237px;
+}
+.popup-edit .row-inp {
+    display: inline-block;
+}
+.popup-edit .edit-fields {
+    margin-top: 20px;
+}
+.popup-edit input {
+    height: 25px;
+}
+.popup-edit .row-inp.row-first {
+    margin-bottom: 10px;
+}
+.popup-edit .save-button-outer {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.passport-country .button-text,
+.nationality .button-text {
+	background: white;
+	padding: 4px;
+	border-radius: 5px;
+	color: #5b5b5b;
+	border: 1px solid #adadad;
+	height: 19px;
+}
+.nationality .button-text,
+.passport-country .button-text {
+	width: 156px;
+}
+.nationality ul,
+.passport-country ul {
+	min-width: 152px!important;
+}
+.passport-country img,
+.nationality img {
+	border-left: 1px solid #a4a5a5;
+	padding-bottom: 7px;
+	float: right;
+	margin-top: -4px;
+	padding-top: 10px;
+	padding-left: 8px;
+	padding-bottom: 6px;
+	padding-right: 8px;
+	margin-right: -4px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.passport-country ul,
+.nationality ul {
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	z-index: 100;
+	background: white;
+	border-radius: 5px;
+	color: #5b5b5b;
+	margin-top: 1px;
+	min-width: 128px;
+	padding: 5px;
+	border: 1px solid #adadad;
+	list-style: none;
+}
+.passport-country li,
+.nationality li{
+	padding-left: 5px;
+	margin-left: -5px;
+	padding-right: 5px;
+	margin-right: -5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.passport-country li:first-child,
+.nationality li:first-child {
+	margin-top: -5px;
+	padding-top: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.passport-country li:last-child,
+.nationality li:last-child {
+	margin-bottom: -5px;
+	padding-bottom: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.passport-country li:hover,
+.nationality li:hover {
+	background: #d7d7d7;
+}
+.row-inp.dropdown {
+    position: relative;
+    top: 3px;
+    top: 1px\9;
+}
+.popup-edit input {
+    width: 127px;
+    margin-right: 5px;
+}
+.nationality.button-dropdown {
+}
+.nationality .button-text {
+    width: 161px;
+    width: 140px\9;
+    margin-right: 5px;
+}
+.passport-country .button-text {
+    width: 151px;
+}
+
+#content-main {
+	margin-bottom: -147px;
+}
+.passport-data {
+    margin-bottom: 20px;
+}

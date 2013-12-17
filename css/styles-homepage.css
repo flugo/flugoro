@@ -1,0 +1,700 @@
+input {
+    border-radius: 5px 5px 5px 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+th {
+    width: 240px;
+}
+#section-content {
+    color: #5B5B5B;
+}
+#content-sidebar-left {
+    background: none repeat scroll 0 0 #EFF3F4;
+    border-radius: 10px 10px 10px 10px;
+    height: 240px;
+    margin-right: 70px;
+    margin-top: 56px;
+    width: 80px;
+}
+.main-block .content, .main-block .hotel {
+    background: none repeat scroll 0 0 #EFF3F4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: -74px;
+    margin-right: 10px;
+    padding: 15px 10px 10px;
+    width: 610px;
+}
+.main-block .hotel {
+    height: auto;
+    margin-bottom: -5px;
+    overflow: hidden;
+}
+.ui-datepicker-calendar {
+    margin-top: -20px;
+}
+.content-main-tabs {
+    font-size: 21px;
+    margin-bottom: -6px;
+    margin-bottom: -6px\9;
+}
+
+@media not screen and (1)
+{
+    .content-main-tabs {
+		margin-bottom: 0px;
+	}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    ::i-block-chrome,.content-main-tabs {
+     margin-bottom: 0;
+    }
+}
+.tab-bilete, .tab-hoteluri {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: inline-block;
+    overflow: hidden;
+}
+.gradient {
+    background: none repeat scroll 0 0 #EFF3F4;
+    display: inline-block;
+    padding: 16px 20px;
+    text-align: center;
+    width: 135px;
+}
+.tab-bilete:hover, .tab-hoteluri:hover {
+    cursor: pointer;
+}
+.inactive {
+	background-image: linear-gradient(top, rgb(245,245,245) 10%, rgb(225,225,225) 55%);
+	background-image: -o-linear-gradient(top, rgb(245,245,245) 10%, rgb(225,225,225) 55%);
+	background-image: -moz-linear-gradient(top, rgb(245,245,245) 10%, rgb(225,225,225) 55%);
+	background-image: -webkit-linear-gradient(top, rgb(245,245,245) 10%, rgb(225,225,225) 55%);
+	background-image: -ms-linear-gradient(top, rgb(245,245,245) 10%, rgb(225,225,225) 55%);	
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#F5F5F5', EndColorStr='#E1E1E1');
+	background-image: -webkit-gradient(
+		linear,
+		right top,
+		right bottom,
+		color-stop(0.1, rgb(245,245,245)),
+		color-stop(0.55, rgb(225,225,225))
+	);
+}
+#content-sidebar-right {
+    position: relative;
+    width: 170px;
+    z-index: 50;
+}
+.block-socialization-right {
+    background: none repeat scroll 0 0 #EFF3F4;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 18px;
+    margin-top: 59px;
+    text-align: center;
+}
+.title {
+    border-bottom: 1px solid #ACACAC;
+    color: #ACACAC;
+    padding: 10px;
+}
+.block-socialization-right-icons {
+    border-radius: 10px 10px 10px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.block-socialization-right-icons {
+    margin-top: 5px;
+    padding: 10px;
+}
+.block-socialization-right-icons img {
+    width: 25px;
+}
+.block-socialization-right-icons img {
+    margin-right: 7px;
+}
+img.twitter {
+    margin-right: 0;
+}
+.block-recent-search {
+    background: none repeat scroll 0 0 #EFF3F4;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 18px;
+    margin-top: 13px;
+}
+.block-recent-search .title {
+    color: #000000;
+}
+.block-recent-search .title {
+    border: medium none;
+    text-align: center;
+}
+.search-description, .search-image-link {
+    display: inline-block;
+}
+.search-image-link {
+    background: url("../images/search-arrow-link.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 24px;
+    width: 24px;
+}
+.search-description-place {
+    font-size: 14px;
+}
+.search-description-time {
+    font-size: 12px;
+}
+.searches {
+    border-top: 1px solid #ACACAC;
+    color: #5B5B5B;
+    cursor: pointer;
+    height: 40px;
+    padding-top: 10px;
+}
+.search-description {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+.one-way-ticket, .return-ticket {
+    display: inline-block;
+    margin-left: 26px;
+    width: 290px;
+}
+.one-way-ticket {
+    float: left;
+}
+.calendar {
+    float: left;
+    width: 280px;
+}
+.one-way-ticket td:hover, .active-ticket td:hover {
+    background: none repeat scroll 0 0 #D5D5D5;
+}
+.ticket-field, .ticket-radio, .calendar-select-month {
+    margin-bottom: 5px;
+}
+.ticket-to-field, .ticket-from-field, .ticket-departure-field, .ticket-return-field, .main-ticket-departure-field, .main-ticket-return-field, .card-number, .coupon-field {
+    border-radius: 10px 10px 10px 10px;
+    height: 33px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 250px;
+}
+.ticket-to-field, .ticket-from-field, .ticket-departure-field, .ticket-return-field {
+    font-size: 16px !important;
+}
+.one-way-ticket.ticket-type {
+    margin-left: 4px;
+}
+.buttons-select {
+    float: left;
+    margin-top: -5px;
+}
+.buttons-search-ticket, .buttons-search-hotel, .buttons-multidirection, .buttons-new-direction, .buttons-remove-direction {
+    background: none repeat scroll 0 0 #E84044;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    float: right;
+    font-size: 20px;
+    height: 26px;
+    margin-top: -9px;
+    padding: 5px;
+    position: relative;
+    top: 2px;
+}
+.buttons-multidirection, .buttons-new-direction, .buttons-remove-direction {
+    background: none repeat scroll 0 0 #E84044;
+    height: auto;
+    left: -115px;
+    padding: 4px;
+    top: 4px;
+}
+.buttons-multidirection:hover, .buttons-new-direction:hover, .buttons-remove-direction:hover {
+    background: none repeat scroll 0 0 #CB3A44;
+    cursor: pointer;
+}
+.buttons-multidirection .in-button .text, .buttons-new-direction .in-button .text, .buttons-remove-direction .in-button .text {
+    font-size: 14px;
+    position: relative;
+    top: -2px;
+}
+.buttons-new-direction, .buttons-remove-direction {
+    display: table-cell;
+    float: none;
+    font-size: 20px;
+    left: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    top: 0;
+}
+.button-login, .button-registration {
+    background: none repeat scroll 0 0 #E84044;
+    border-radius: 5px 5px 5px 5px !important;
+    color: #FFFFFF !important;
+    float: none;
+    font-size: 20px !important;
+    height: 26px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 5px !important;
+}
+.button-registration {
+    margin-left: 212px;
+}
+.buttons-search-ticket:hover, .buttons-search-hotel:hover {
+    background: none repeat scroll 0 0 #CB3A44;
+    cursor: pointer;
+}
+.buttons-ticket {
+    border-top: 1px solid #D5D5D5;
+    margin-top: 5px;
+    padding-top: 15px;
+}
+.login-popup-in.popup-title, .login-popup-in.social, .login-popup-in.fields, .login-popup-in.popup-footer {
+    z-index: 9999;
+}
+.login-popup-in.fields {
+    border-bottom: 2px solid #E9E9E9;
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+}
+.login-popup-in.social {
+    border-bottom: 2px solid #E9E9E9;
+    margin-bottom: 8px;
+}
+.field-input-popup {
+    height: 30px;
+    width: 262px;
+}
+.fields.email {
+    float: left;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 31px;
+}
+.button-login {
+    background: none repeat scroll 0 0 #E84044;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 26px;
+    margin: 26px auto 10px;
+    padding: 5px;
+}
+.button-registration {
+    margin-top: 10px;
+}
+.loading-block {
+    background: none repeat scroll 0 0 #EFF3F4;
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+    height: 200px;
+    margin-right: 10px;
+    margin-top: 48px;
+    padding: 10px;
+    text-align: center;
+    width: 960px;
+}
+
+.buttons-ticket {
+    border-top: 1px solid #D5D5D5;
+    display: table-cell;
+    padding-top: 15px;
+    position: relative;
+    width: 610px;
+}
+
+
+/*
+.language-block:hover {
+    cursor: pointer;
+}
+*/
+/*.language-block li,*/ .people-select li, .ticket-class li, .currency li {
+    list-style: none outside none;
+    margin-left: -5px;
+    margin-right: -5px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+}
+.ticket-class li:hover {
+    background: none repeat scroll 0 0 #D7D7D7;
+}
+/*
+.language-block li:first-child, .ticket-class li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -5px;
+}
+
+.language-block li a {color:#fff;}
+
+.language-block li:last-child,*/ .ticket-class li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: -5px;
+    padding-bottom: 5px;
+}
+/*
+.language-block li:hover {
+    background: none repeat scroll 0 0 #24529B;
+    cursor: pointer;
+}
+.language-block ul,*/ .currency ul {
+    background: none repeat scroll 0 0 #5282C0;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    display: none;
+    margin: 1px 0 0;
+    padding: 0;
+    width: 40px;
+    z-index: 100;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+/*
+.language-block ul {
+    min-width: 88px;
+    padding: 5px;
+}
+*/
+.ticket-class {
+    float: left;
+    margin-left: 5px;
+}
+.ticket-class:hover {
+    cursor: pointer;
+}
+.people-number ul, .ticket-class ul, .check-in ul, .luggage-in ul, .kids-eq-in ul, .sport-eq-in ul, .music-eq-in ul {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ADADAD;
+    border-radius: 5px 5px 5px 5px;
+    color: #5B5B5B;
+    display: none;
+    list-style: none outside none;
+    margin: 1px 0 0;
+    padding: 5px;
+    width: 170px;
+    z-index: 100;
+}
+.ticket-class ul {
+    width: 120px;
+}
+.people-number ul {
+    width: 121px;
+}
+.people-number {
+    cursor: pointer;
+    float: left;
+}
+.people-number li {
+    float: left;
+    margin-left: -5px;
+    padding: 5px 10px 5px 10px;
+}
+.people-number li:hover {
+    background: none repeat scroll 0 0 #D7D7D7;
+}
+.people-number li:first-child {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -5px;
+}
+.people-number li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: -5px;
+}
+.people-select {
+    clear: right;
+    float: left;
+}
+/*.language-block .button-text,*/ .currency .button-text {
+    background: none repeat scroll 0 0 #5282C0;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    padding: 4px;
+    width: auto;
+}
+/*
+.language-block .button-text {
+    width: 90px;
+}
+*/
+.people-number .button-text, .ticket-class .button-text {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #ADADAD;
+    border-radius: 5px 5px 5px 5px;
+    color: #5B5B5B;
+    line-height: 21px;
+    padding: 5px;
+    text-align: center;
+    width: 90px;
+}
+.ticket-class .button-text {
+    width: 120px;
+}
+
+.people-number .button-text {
+    width: 120px;
+}
+.ui-datepicker-calendar tr td {
+    height: 30px;
+    width: 36px;
+}
+.people-select .text {
+    float: left;
+    width: 75px;
+}
+.people-select .category {
+    font-size: 14px;
+}
+.people-select .age {
+    font-size: 11px;
+}
+.hotel {
+    display: none;
+}
+.hotel .title {
+    border: medium none;
+    color: #000000;
+}
+.destination {
+    margin-bottom: 20px;
+    width: 586px !important;
+}
+.check-in-date {
+    float: left;
+    margin-right: 10px;
+}
+.hotel input {
+    font-size: 16px;
+    height: 30px;
+    margin-left: 2px;
+    width: 276px;
+}
+.hotel .checkbox {
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.hotel .checkbox input {
+    height: 13px;
+    width: 13px;
+}
+.guest-data span {
+    display: inline-block;
+    margin-right: 20px;
+    width: 40px;
+}
+.guest-data select {
+    margin-left: 5px;
+}
+.room .room-nr {
+    font-size: 16px;
+    position: static;
+}
+.room span {
+    font-size: 11px;
+    margin-right: 100px;
+    margin-top: 10px;
+    position: relative;
+    top: 5px;
+    width: 60px;
+}
+.main-option div {
+    display: inline-block;
+    margin-right: 60px;
+}
+.main-option, .rooms-quantity {
+    display: table;
+    position: relative;
+    top: -18px;
+}
+.rooms-quantity {
+    position: relative;
+    top: -20px;
+}
+
+/*.language-block img,*/ .ticket-class img, .luggage-in img, .check-in img, .kids-eq-in img, .sport-eq-in img, .music-eq-in img {
+    border-left: 1px solid #FFFFFF;
+    float: right;
+    margin-top: -26px;
+    padding: 11px 8px 9px;
+}
+/*
+.language-block img {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -28px;
+    padding-bottom: 7px;
+    padding-top: 10px;
+}
+*/
+.ticket-class img {
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid #A4A5A5;
+    border-top-right-radius: 5px;
+    margin-right: -5px;
+    margin-top: -5px;
+}
+.people-number img {
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid #A4A5A5;
+    border-top-right-radius: 5px;
+    float: right;
+    margin-right: -5px;
+    margin-top: -5px;
+    padding: 12px 8px 8px;
+}
+#ui-datepicker-div {
+    display: none;
+}
+.registration-popup .fields {
+    float: left;
+}
+.registration-popup .fields.password {
+    margin-bottom: 30px;
+    margin-left: 5px;
+    margin-right: 31px;
+}
+.tos-text-accept {
+    display: inline-table;
+}
+.registration-popup {
+    height: 340px;
+}
+.login-popup, .registration-popup {
+    background: none repeat scroll 0 0 #EFF3F4;
+    border-radius: 10px 10px 10px 10px;
+    display: none;
+    font-size: 18px;
+    height: 350px;
+    left: 50%;
+    margin-left: -302.5px;
+    margin-top: -175px;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    width: 605px;
+    z-index: 9999;
+}
+.login-popup-in.popup-title, .registration-popup .popup-title {
+    border-bottom: 2px solid #E9E9E9;
+    font-size: 21px;
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+}
+.main-ticket-departure-field, .main-ticket-return-field {
+    font-size: 16px;
+    padding-bottom: 3px;
+    padding-top: 0;
+}
+.room {
+    margin-left: 65px;
+}
+.disable-box {
+    background: none repeat scroll 0 0 #EFF3F4;
+    height: 290px;
+    opacity: 0.5;
+    position: absolute;
+    right: 25px;
+    top: 145px;
+    width: 290px;
+	filter: alpha(opacity=70);
+}
+.login-popup input, .registration-popup input {
+    font-size: 16px;
+}
+.wCheck {
+    margin-right: 5px;
+}
+.social-title {
+    font-size: 18px;
+}
+input.adults-main, input.children-main {
+    height: 18px;
+    margin-left: 5px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-top: 1px;
+    text-align: center;
+    width: 15px;
+}
+.login-popup-in.social .block-socialization-right-icons img {
+    width: 45px;
+}
+.buttons-search-ticket.red-button .text {
+    width: 50px;
+}
+#content-sidebar-left, #content-main, #content-sidebar-right {
+    display: inline-block;
+    float: left;
+    margin-bottom: -142px;
+}
+@-moz-document url-prefix("") {
+.content-main-tabs {
+    margin-bottom: -6px;
+}
+}
+.multi-direction {
+    display: none;
+    margin-bottom: 10px;
+}
+.multi-direction .input-field {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.multi-direction .input-field.second {
+    margin-left: 29px;
+}
+.multi-direction .input-field input {
+    margin-left: 4px;
+    width: 250px;
+}
+.multi-direction .input-field .date-select {
+    border-radius: 10px 10px 10px 10px;
+    font-size: 16px;
+    height: 33px;
+    padding-left: 14px;
+    padding-right: 14px;
+    width: 250px;
+}
+.new-direction {
+    float: left;
+    margin-right: 10px;
+}
+.ticket-type-choice .ticket-radio {
+    display: inline-block;
+}
+.ticket-type-choice .ticket-radio.first {
+    margin-left: 5px;
+}
+.ticket-type-choice .ticket-radio.second {
+    margin-left: 120px;
+    margin-right: 90px;
+}
+.ticket-type-choice .ticket-radio.third {
+    margin-right: 5px;
+}
+.ticket-field.first {
+    margin-bottom: 40px;
+}
+.ticket-type-choice {
+    position: absolute;
+    top: 119px;
+    margin-top: 2px;
+}
+@-moz-document url-prefix("") {
+	.ticket-type-choice {
+    	margin-top: 2px;
+	}
+}
+.buttons-remove-direction {
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.people-number li select {
+    margin-left: -4px;
+}

@@ -1,0 +1,310 @@
+#section-content {
+	color: #5b5b5b;
+}
+
+#content-sidebar-left {
+	width: 258px;
+	height: 240px;
+	margin-right: 16px;
+	background: #EFF3F4;
+	border-radius: 10px;
+}
+
+.content-main-tabs {
+	font-size: 21px;
+}
+
+.search-description,
+.search-image-link {
+	display: inline-block;
+}
+
+.login-popup {
+	width: 605px;
+	height: 330px;
+	position: fixed;
+	top: 50%;
+	margin-left: -302.5px;
+	margin-top: -175px;
+	left: 50%;
+	z-index: 9999;
+	background: #EFF3F4;
+	border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+	font-size: 15px;
+	display: none;
+}
+
+.login-popup-in.popup-title,
+.login-popup-in.social,
+.login-popup-in.fields,
+.login-popup-in.popup-footer {
+	z-index: 9999;
+}
+
+.login-popup-in.popup-title {
+	font-size: 21px;
+	padding-bottom: 15px;
+	margin-bottom: 18px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.login-popup-in.fields {
+	margin-bottom: 18px;
+	padding-bottom: 15px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.login-popup-in.social {
+	margin-bottom: 13px;
+	border-bottom: 2px solid #e9e9e9;
+}
+
+.field-input-popup {
+	width: 280px;
+	height: 30px;
+}
+
+.fields.email {
+	float: left;
+	margin-left: 5px;
+	margin-right: 31px;
+}
+
+.fields.email, .fields.password {
+	margin-bottom: 15px;
+}
+
+.button-registration {
+	background: #e84044;
+	border-radius: 5px;
+	color: white;
+	padding: 5px;
+	height: 26px;
+	width: 165px;
+	font-size: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+}
+
+.popup-footer-text {
+	float: left;
+}
+
+.content-main-block-1 {
+	width: 666px;
+	height: 555px;
+	background: #EFF3F4;
+	border-radius: 10px;
+	padding: 30px 10px 10px 10px;
+	margin-bottom: 13px;
+}
+
+.content-main-block-2 {
+	width: 654px;
+	height: 230px;
+	background: #EFF3F4;
+	border-radius: 10px;
+	padding: 16px;
+	color: black;
+	font-size: 14px;
+}
+
+.ticket-info-title {
+	font-size: 21px;
+	text-align: center;
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 10px;
+	margin-bottom: -10px;
+}
+
+.reservation-id,
+.reservation-date,
+.reservation-methods {
+	color: #e94045;
+}
+
+
+.ticket-info-button .title {
+	font-size: 18px;
+	margin-left: -5px;
+	padding-left: 5px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+.ticket-info-description,
+.ticket-info-button {
+	padding-left: 5px;
+}
+
+.ticket-info-description {
+	padding-bottom: 20px;
+}
+
+.ticket-info-button.title {
+	border-bottom: 1px solid #cccccc;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+}
+
+.ticket-info-button .price {
+	float: left;
+	font-size: 28px;
+	color: #e94045;
+}
+
+.ticket-info-button .button {
+	float: right;
+	background: #e84044;
+	border-radius: 5px;
+	color: white;
+	padding: 5px;
+	font-size: 20px;
+	padding-top: 9px;
+}
+
+.ticket-info-button .button:hover {
+	background: #cb3a44;
+}
+
+.button-text, .button-image {
+	float: left;
+}
+
+.ticket-info-button img {
+	margin-left: 10px;
+}
+
+.price-info {
+	font-size: 12px;
+	color: #555555;
+}
+
+.block-ticket-info-left {
+	text-align: center;
+	margin-top: 90px;
+}
+
+.block-ticket-info-left .title {
+	font-size: 21px
+}
+
+.block-ticket-info-left .price {
+	font-size: 28px;
+	color: #e94045;
+}
+
+.block-ticket-info-left .info {
+	font-size: 12px;
+}
+
+.content-main-block-1-text {
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 21px;
+}
+
+.step-1 img,
+.step-2 img,
+.step-3 img,
+.step-4 img {
+	width: 240px;
+	height: auto;
+}
+
+.step-1 img {
+	margin-left: -73px;
+}
+
+.step-2 img {
+	margin-left: -160px;
+}
+
+.step-3 img {
+	margin-left: -95px;
+}
+
+.step-4 img {
+	margin-left: -79px;
+}
+
+.step-1,
+.step-2 {
+	color: white;
+}
+
+.step-1 span {
+	top: 12px;
+	left: 80px;
+}
+
+.step-2 span {
+	top: 12px;
+	left: 45px;
+}
+
+.step-3 span {
+	top: 12px;
+	left: 75px;
+}
+
+.step-4 span {
+	top: 12px;
+	left: 80px;
+}
+
+.step-1 .step-text,
+.step-2 .step-text,
+.step-3 .step-text,
+.step-4 .step-text{
+	float: left;
+	position: relative;
+}
+
+.step-1,
+.step-2,
+.step-3,
+.step-4 {
+	float: left;
+	position: relative;
+	font-size: 21px;
+}	
+
+.language-block li {
+	list-style: none;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.language-block li:hover {
+	background: white;
+	color: #5282C0;
+}
+
+.language-block ul {
+	padding: 0px;
+	margin: 0px;
+	display: none;
+	z-index: 100;
+	background: #5282C0;
+	border-radius: 5px;
+	color: white;
+	margin-top: 31px;
+	width: 80px;
+	padding: 5px;
+	position: absolute;
+}
+
+.language-block .button-text {
+	background: #5282C0;
+	padding: 5px;
+	border-radius: 5px;
+	width: 80px;
+	color: white;
+}

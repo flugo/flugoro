@@ -1,0 +1,11 @@
+<?php
+
+return array(
+    'connectionString' => 'pgsql:host=127.0.0.1;port=5432;dbname=dbtest',
+    'emulatePrepare' => true,
+    'username' => '',
+    'password' => '',
+    'charset' => 'utf8',
+);
+
+?>
