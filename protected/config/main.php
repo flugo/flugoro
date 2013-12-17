@@ -3,6 +3,9 @@
  * Project: flugo
  * Author: Catirau Mihail
  * Date: 11.12.13
+ * 
+ * edit
+ * 
  */
 // Main configuration
 
