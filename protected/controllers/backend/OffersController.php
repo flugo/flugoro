@@ -1,6 +1,6 @@
 <?php
 
-class OffersController extends FrontEndController
+class OffersController extends BackEndController
 {
 	/**
 	 * @var string the default layout for the views.

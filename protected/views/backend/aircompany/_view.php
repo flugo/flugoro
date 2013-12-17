@@ -3,41 +3,18 @@
 /* @var $data AircompanyDesc */
 ?>
 
-<div class="view">
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('cid')); ?>:</b>
-	<?php echo CHtml::link(CHtml::encode($data->cid), array('view', 'id'=>$data->cid)); ?>
-	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('aircompanyid')); ?>:</b>
-	<?php echo CHtml::encode($data->aircompanyid); ?>
-	<br />
+    <div class="col-sm-6 col-md-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title"><?php echo $data->title; ?></h3>
+            </div>
+            <div class="panel-body" style="height:200px;">
+                    <img src="<?php echo Yii::app()->request->baseUrl.$data->image;?>" alt="<?php echo $data->title; ?>" width="100px">
+                    <p><?php echo $data->description; ?></p>
+            </div>
+            <div class="actions" style="padding: 10px;"><?php echo CHtml::link('Detalii', array('view', 'id'=>$data->cid),array('class'=>'btn btn-default', 'role'=>'button')); ?> <?php echo CHtml::link('Editeaza', array('update', 'id'=>$data->cid),array('class'=>'btn btn-success', 'role'=>'button')); ?> <?php echo CHtml::link('Sterge', array('delete', 'id'=>$data->cid),array('class'=>'btn btn-danger', 'role'=>'button')); ?></div>
+        </div>
+    </div>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
-	<?php echo CHtml::encode($data->title); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('slug')); ?>:</b>
-	<?php echo CHtml::encode($data->slug); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
-	<?php echo CHtml::encode($data->description); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
-	<?php echo CHtml::encode($data->content); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('image')); ?>:</b>
-	<?php echo CHtml::encode($data->image); ?>
-	<br />
-
-	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
-	<?php echo CHtml::encode($data->status); ?>
-	<br />
-
-	*/ ?>
-
-</div>

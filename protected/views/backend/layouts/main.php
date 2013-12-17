@@ -11,10 +11,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
+
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/tinymce/tinymce.min.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/css/bootstrap.min.css" />
@@ -92,14 +93,6 @@
 </div><!-- /#wrapper -->
 
 <!-- JavaScript -->
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/jquery.min.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/tinymce/tinymce.min.js"></script>
-
-<!-- Page Specific Plugins -->
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/tablesorter/jquery.tablesorter.js"></script>
-<script src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/tablesorter/tables.js"></script>
-
 <script type="text/javascript">
     tinymce.init({
         selector: ".tiny-textarea"

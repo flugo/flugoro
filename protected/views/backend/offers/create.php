@@ -3,16 +3,16 @@
 /* @var $model Offers */
 
 $this->breadcrumbs=array(
-	'Offers'=>array('index'),
-	'Create',
+	'Oferte'=>array('index'),
+	'Creare',
 );
 
 $this->menu=array(
-	array('label'=>'List Offers', 'url'=>array('index')),
-	array('label'=>'Manage Offers', 'url'=>array('admin')),
+	array('label'=>'Lista ofertelor', 'url'=>array('index')),
+	array('label'=>'Aministrare oferte', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Offers</h1>
+<h3>Creare oferta noua</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

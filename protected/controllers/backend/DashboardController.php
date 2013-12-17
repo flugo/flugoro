@@ -48,10 +48,5 @@ class DashboardController extends BackEndController
 		}
 	}
 
-	/**
-	 * Displays the contact page
-	 */
-
-
 
 }

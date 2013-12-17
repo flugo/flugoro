@@ -21,7 +21,7 @@
     </div>
 
 
-	<?php echo $form->errorSummary($model,'<i class="glyphicon glyphicon-exclamation-sign"></i> Eroare validare',null,array('class'=>'alert alert-warning')); ?>
+	<?php echo $form->errorSummary($model,'<i class="glyphicon glyphicon-exclamation-sign"></i> Erori de validare',null,array('class'=>'alert alert-warning')); ?>
 
 
     <div class="form-group">

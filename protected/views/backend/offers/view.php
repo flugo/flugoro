@@ -3,16 +3,16 @@
 /* @var $model Offers */
 
 $this->breadcrumbs=array(
-	'Offers'=>array('index'),
+	'Oferte'=>array('index'),
 	$model->title,
 );
 
 $this->menu=array(
-	array('label'=>'List Offers', 'url'=>array('index')),
-	array('label'=>'Create Offers', 'url'=>array('create')),
-	array('label'=>'Update Offers', 'url'=>array('update', 'id'=>$model->oid)),
-	array('label'=>'Delete Offers', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->oid),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Offers', 'url'=>array('admin')),
+	array('label'=>'Lista ofertelor', 'url'=>array('index')),
+	array('label'=>'Creaza oferta noua', 'url'=>array('create')),
+	array('label'=>'Editeaza oferta', 'url'=>array('update', 'id'=>$model->oid)),
+	array('label'=>'Sterge oferta', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->oid),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administrare oferte', 'url'=>array('admin')),
 );
 ?>
 

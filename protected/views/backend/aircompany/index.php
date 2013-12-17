@@ -14,7 +14,17 @@ $this->menu=array(
 
 <h4>Descrieri companii aeriene</h4>
 
-<?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
-)); ?>
+
+<?php
+
+$wdata = $dataProvider->getData();
+if(count($wdata))
+{   echo '<div class="row">';
+    foreach($wdata as $item=>$data){
+
+        echo $this->renderFile($this->getViewFile('_view'),array('data'=>$data));
+        if(($item+1) % 3 == 0) echo '</div><div class="row">';
+    }
+    echo '</div>';
+}
+?>

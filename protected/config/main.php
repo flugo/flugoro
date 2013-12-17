@@ -64,7 +64,7 @@ return array(
 		*/
 		// uncomment the following to use a MySQL database
 
-		'db'=>require_once(dirname(__FILE__).'/conections.php'),
+		'db'=>require_once(dirname(__FILE__).'/connections.php'),
 
 
 		'log'=>array(

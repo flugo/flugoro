@@ -3,19 +3,19 @@
 /* @var $model Offers */
 
 $this->breadcrumbs=array(
-	'Offers'=>array('index'),
+	'Oferte'=>array('index'),
 	$model->title=>array('view','id'=>$model->oid),
-	'Update',
+	'Editare',
 );
 
 $this->menu=array(
-	array('label'=>'List Offers', 'url'=>array('index')),
-	array('label'=>'Create Offers', 'url'=>array('create')),
-	array('label'=>'View Offers', 'url'=>array('view', 'id'=>$model->oid)),
-	array('label'=>'Manage Offers', 'url'=>array('admin')),
+	array('label'=>'Lista ofertelor', 'url'=>array('index')),
+	array('label'=>'creaza o oferta', 'url'=>array('create')),
+	array('label'=>'Vezi oferta', 'url'=>array('view', 'id'=>$model->oid)),
+	array('label'=>'Administrare oferte', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Offers <?php echo $model->oid; ?></h1>
+<h4>Editare oferta <?php echo $model->title; ?></h4>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -1,7 +1,7 @@
 <?php
 /**
  * Project: flugo
- * Author: ALUser1
+ * Author: Catirau Mihail
  * Date: 11.12.13
  */
 Class UserController extends BackEndController{

@@ -1,6 +1,6 @@
 <?php
 
-class AircompanyController extends FrontEndController
+class AircompanyController extends BackEndController
 {
     /**
      * @var string the default layout for the views.

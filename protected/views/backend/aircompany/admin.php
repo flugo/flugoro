@@ -8,8 +8,9 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List AircompanyDesc', 'url'=>array('index')),
-	array('label'=>'Create AircompanyDesc', 'url'=>array('create')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
+
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -49,12 +50,7 @@ $('.search-form form').submit(function(){
 		'aircompanyid',
 		'title',
 		'slug',
-		'description',
-		'content',
-		/*
-		'image',
 		'status',
-		*/
 		array(
 			'class'=>'CButtonColumn',
 		),
