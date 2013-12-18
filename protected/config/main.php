@@ -66,6 +66,7 @@ return array(
 
 		'db'=>require_once(dirname(__FILE__).'/connections.php'),
 
+		'db2'=>require_once(dirname(__FILE__).'/ext-connections.php'), 
 
 		'log'=>array(
 			'class'=>'CLogRouter',
