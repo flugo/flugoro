@@ -73,7 +73,9 @@ class SiteController extends FrontEndController {
 		
 		$this->render ( 'default', array ('search' => $model) );
 	}
-	
+	/*
+	 * 
+	 * */
 	public function actionCityhelper(){
 		
 		$model = new CityHelper();

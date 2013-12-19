@@ -1,4 +1,38 @@
 
+/*
+.tooltip:before, .tooltip:after {
+	content: "";
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	top: 100%;	
+	left: 50%;
+	margin-left: -10px;
+}
+
+.tooltip:before {
+	border-top: 10px solid #e84044;
+	border-top: 10px solid #e84044;
+	margin-top: 0px;
+}
+
+.tooltip:after{
+	border-top: 10px solid lemonchiffon;
+	margin-top: -3px;
+	z-index: 1;
+}
+
+.tooltip {
+    position: absolute;
+    margin-top: -75px;
+    margin-left: 70px;
+    background-color: lemonchiffon;
+    border-radius: 10px;
+    border: 2px solid #e84044;
+    padding: 5px;
+}
+*/
+
 
 
 /* Z-INDEX */
@@ -43,16 +77,10 @@
 
 .formError .formErrorContent {
 	width: 100%;
-	background: #ee0101;
+	background: #FFFACD;
 	position:relative;
-	color: #fff;
 	min-width: 120px;
-	font-size: 11px;
-	border: 2px solid #ddd;
-	box-shadow: 0 0 6px #000;
-	-moz-box-shadow: 0 0 6px #000;
-	-webkit-box-shadow: 0 0 6px #000;
-	-o-box-shadow: 0 0 6px #000;
+	border: 2px solid  #E84044;
 	padding: 4px 10px 4px 10px;
 	border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -82,8 +110,8 @@
 }
 
 .formError .formErrorArrow {
-	width: 15px;
-	margin: -2px 0 0 13px;
+	width: 16px;
+	margin: -2px 0 0 13px /*auto */;
 	position:relative;
 }
 body[dir='rtl'] .formError .formErrorArrow,
@@ -101,15 +129,11 @@ body.rtl .formError .formErrorArrow {
 }
 
 .formError .formErrorArrow div {
-	border-left: 2px solid #ddd;
-	border-right: 2px solid #ddd;
-	box-shadow: 0 2px 3px #444;
-	-moz-box-shadow: 0 2px 3px #444;
-	-webkit-box-shadow: 0 2px 3px #444;
-	-o-box-shadow: 0 2px 3px #444;
+	border-left: 3px solid  #E84044;
+	border-right: 3px solid #E84044;
 	font-size: 0px;
 	height: 1px;
-	background: #ee0101;
+	background-color: #FFFACD;
 	margin: 0 auto;
 	line-height: 0;
 	font-size: 0;
@@ -164,19 +188,19 @@ body.rtl .formError .formErrorArrow {
 
 .formError .formErrorArrow .line3 {
 	width: 1px;
-	border-left: 2px solid #ddd;
-	border-right: 2px solid #ddd;
-	border-bottom: 0 solid #ddd;
+	border-left: 3px solid #E84044;
+	border-right: 3px solid #E84044;
+	border-bottom: 0 solid #E84044;
 }
 
 .formError .formErrorArrow .line2 {
-	width: 3px;
+	width: 5px;
 	border: none;
-	background: #ddd;
+	background: #E84044;
 }
 
 .formError .formErrorArrow .line1 {
-	width: 1px;
+	width: 3px;
 	border: none;
-	background: #ddd;
+	background: #E84044;
 }

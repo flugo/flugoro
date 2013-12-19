@@ -1665,9 +1665,7 @@
 					});
 				}, options.autoHideDelay);
 			}
-			return prompt.animate({
-				"opacity": 0.87
-			});
+			return prompt.animate({"opacity": 1});
 		},
 		/**
 		* Updates the prompt text field - the field for which the prompt
@@ -2009,7 +2007,7 @@
 		// Opening box position, possible locations are: topLeft,
 		// topRight, bottomLeft, centerRight, bottomRight, inline
 		// inline gets inserted after the validated field or into an element specified in data-prompt-target
-		promptPosition: "topRight",
+		promptPosition: "topLeft",
 		bindMethod:"bind",
 		// internal, automatically set to true when it parse a _ajax rule
 		inlineAjax: false,

@@ -8,9 +8,9 @@ $this->pageDescription = 'prima gegina';
 $this->cssRun = array('styles-homepage');
 $this->jsRun = array('default');
 
-
-// print_r($search);
-// exit;
+//  echo "<pre>";
+//  print_r($search);
+//  exit;
 ?>
 
 
@@ -44,9 +44,14 @@ $this->jsRun = array('default');
                             </div>
                         </div>
                     </div>
-                    <form >
+                    <form id="flights-search" >
+                    
                         <input type="hidden"  name="code_from" value="<?php echo $search->code_from; ?>"/>
                         <input type="hidden"  name="code_to" value="<?php echo $search->code_to; ?>"/>
+     
+                        <input type="hidden"  name="date_from" value="<?php echo $search->date_from_d.'-'.$search->date_from_m.'-'.$search->date_from_y; ?>"/>
+                        <input type="hidden"  name="date_to" value="<?php echo $search->date_to_d.'-'.$search->date_to_m.'-'.$search->date_to_y; ?>"/>
+                        
                         <input type="hidden"  name="code_from_2" value="<?php echo $search->code_from_2; ?>"/>
                         <input type="hidden"  name="code_to_2" value="<?php echo $search->code_to_2; ?>"/>
                         
@@ -71,20 +76,26 @@ $this->jsRun = array('default');
                             <div class="one-way-ticket ticket-type active-ticket">
                                 <div class="ticket-field first">
                                     
-                                    <input class="ticket-to-field" type="text" name="from" value="<?php echo $search->name_from; ?>"></div>
-                                <div class="calendar"></div>
+                                    <input id="name_from" class="validate[required] ticket-to-field" type="text" name="name_from" value="<?php echo $search->name_from; ?>"></div>
+                                <div id="date_from_1" class="calendar" data-default='<?php echo ($search->date_from_y.','.($search->date_from_m - 1).','.$search->date_from_d); ?>'></div>
                             </div>
                             <div class="return-ticket ticket-type">
-                                <div class="ticket-field first"><input class="ticket-from-field" type="text" name="to" value="<?php echo $search->name_to; ?>"></div>
-                                <div class="return-t calendar"></div>
+                                <div class="ticket-field first"><input id="name_to" class="ticket-from-field" type="text" name="name_to" value="<?php echo $search->name_to; ?>"></div>
+                                <div id="date_from_2" class="return-t calendar" data-default='<?php echo ($search->date_to_y.','.($search->date_to_m - 1).','.$search->date_to_d); ?>'></div>
                             </div>
                             <div class="disable-box"></div>
                         </div>
                         <div class="multi-direction">
                             <div class="direction-1 directions">
-                                <div class="input-field"><input class="ticket-to-field" type="text" name="from" placeholder="<?php echo Yii::t("main", 'Din'); ?>:"></div>
-                                <div class="input-field second"><input class="ticket-from-field" type="text" name="to" placeholder="<?php echo Yii::t("main", 'Spre'); ?>:"></div>
-                                <div class="input-field"><input class="date-select" type="text" name="flight-date" placeholder="<?php echo Yii::t("main", 'Data'); ?>:"></div>
+                                <div class="input-field">
+                                 <input class="ticket-to-field" type="text" name="name_from" placeholder="<?php echo Yii::t("main", 'Din'); ?>">
+                                </div>
+                                <div class="input-field second">
+                                 <input class="ticket-from-field" type="text" name="name_to" placeholder="<?php echo Yii::t("main", 'Spre'); ?>:">
+                                 </div>
+                                <div class="input-field">
+                                  <input class="date-select" type="text" name="flight-date" placeholder="<?php echo Yii::t("main", 'Data'); ?>">
+                                </div>
                             </div>
                             <div class="new-direction">
                                 <div class="buttons-new-direction">
