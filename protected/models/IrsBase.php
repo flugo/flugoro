@@ -11,15 +11,15 @@ class IrsBase extends CFormModel {
                     'modul_lcc3' => "N",
                     'modul_gds4' => "N",
                     'modul_lcctt' => "N",
-                    'afid' => 'zbor24'
+                    'afid' => 'zbor24',
         );
     
     
     
     public function setRequestApi($arrayparams){
       $arrayparams = array_merge( $arrayparams , $this->defaul);
-        
-      $run_one = Yii::app()->curl->run('***',$arrayparams);
+
+      $run_one = Yii::app()->curl->run( Yii::app()->params['urlapi'] ,$arrayparams);
 
       if (!$run_one->hasErrors()){
        return json_decode($run_one->getData(),true);
