@@ -61,7 +61,9 @@
         <?php  echo $this->renderPartial('/block/_register-now'); ?>
     
 	<!--  script -->
-        
+    <script>
+     var locale = '<?php echo Yii::app()->request->baseUrl ."/". Yii::app()->language ?>';
+    </script>    
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/styles-main.css">
         
         <?php if( isset($this->cssRun) ){
@@ -69,19 +71,15 @@
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/<?php echo $css; ?>.css">
         <?php   } 
               }?>
-        
-        
-        <link rel="stylesheet" href="css/jqueryui.css">
-	
-         
+           
+    <link rel="stylesheet" href="css/jqueryui.css">
 	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/css/wCheck.css">
          
 	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jqueryui.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jqueryui.js"></script>
+    
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/common.js"></script>
         
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/ve/jquery.validationEngine-<?php echo Yii::app()->language; ?>.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/ve/jquery.validationEngine.js"></script>
         <!--
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.countdown.min.js"></script>
         -->
@@ -99,8 +97,9 @@
         <!-- -->
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.placeholder.js"></script>
         
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.validationEngine.js"></script>
-        <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.validationEngine.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/ve/jquery.validationEngine-<?php echo Yii::app()->language; ?>.js"></script>
+    <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/ve/jquery.validationEngine.js"></script>
+       
         
 	<?php /* *-/?>
 	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/scripts.js"></script>

@@ -7659,6 +7659,20 @@ function Datepicker() {
 		showMonthAfterYear: false, // True if the year select precedes month, false for month then year
 		yearSuffix: "" // Additional text to append to the year in the month headers
 	};
+	this.regional['ro'] = {
+            closeText: 'Închide',
+            prevText: '<img src="images/calendar-arrow-left.png">',
+            nextText: '<img src="images/calendar-arrow-right.png">',
+            currentText: 'Azi',
+            monthNames: ['Ianuarie','Februarie','Martie','Aprilie','Mai','Iunie',
+            'Iulie','August','Septembrie','Octombrie','Noiembrie','Decembrie'],
+            monthNamesShort: ['Ian', 'Feb', 'Mar', 'Apr', 'Mai', 'Iun',
+            'Iul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            dayNames: ['Duminică', 'Luni', 'Marţi', 'Miercuri', 'Joi', 'Vineri', 'Sâmbătă'],
+            dayNamesShort: ['Dum', 'Lun', 'Mar', 'Mie', 'Joi', 'Vin', 'Sâm'],
+            dayNamesMin: ['Du','Lu','Ma','Mi','Jo','Vi','Sâ'],
+            dateFormat: 'dd-mm-yy', firstDay: 1,
+            isRTL: false};
 	this._defaults = { // Global defaults for all the date picker instances
 		showOn: "focus", // "focus" for popup on focus,
 			// "button" for trigger button, or "both" for either

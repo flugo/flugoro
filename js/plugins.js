@@ -10,11 +10,9 @@ $(document).ready(function(){
         selector: 'cross'
     });
 						   
-	$('.ticket-departure-field, .ticket-return-field, .calendar, .check-ind-field, .check-outd-field').each(function(i,e) {
+	$('.ticket-departure-field, .ticket-return-field, .check-ind-field, .check-outd-field').each(function(i,e) {
 		var $d = $(this);
-		$d.datepicker({
-			altField: $d.data('altfield')
-		});
+		$d.datepicker({altField: $d.data('altfield')});
     });
 	
 	$('.main-ticket-return-field').val('');
