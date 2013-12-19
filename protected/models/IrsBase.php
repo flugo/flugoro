@@ -15,6 +15,7 @@ class IrsBase extends CFormModel {
         );
     
     
+    
     public function setRequestApi($arrayparams){
       $arrayparams = array_merge( $arrayparams , $this->defaul);
         
@@ -28,6 +29,34 @@ class IrsBase extends CFormModel {
        echo '</pre>';
       }
     }
+    
+    public function getCityHelper($arrayparams){
+    	$connection = Yii::app()->db2;
+    	$sqlStatement = 'select * from irs_dictionary."checkAirportDescListByName_int_v3"(:city, :lang) as ddd("airportCode" varchar,"airportName" varchar,"cityName" varchar,"countryCode" varchar,"countryName" varchar,"continentCode" varchar,"continentName" varchar,"moduleType" bit,"airport" boolean,"city_code" varchar,"country_continent_code" varchar,"cityId" integer)';
+    	$command=$connection->createCommand($sqlStatement);
+    	$command->bindParam(':city',$arrayparams['q']);
+    	$command->bindParam(':lang',$arrayparams['lang']);
+    	
+  	 return ( $command->queryAll() );
+    }
+    /*
+    $array = array();
+    $array[':lang']=(string)  strtoupper($params['lang']);
+    $array[':city']=(string)$params['q'];
+    
+    $array_cities = $this->getCityHelperByLang( $array );
+    
+    $return = array();
+    if(isset($array_cities)){
+    	foreach( $array_cities as $city){
+    		$return[] = array('airportCode'=>strtoupper($city['airportCode']),'cityName'=>ucwords($city['cityName']),
+    				'countryName'=>ucwords($city['countryName']),'airportName'=>ucwords($city['airportName']),
+    				'cityCode'=>empty($city['city_code'])?$city['airportCode']:$city['city_code']/*,
+    				'low'=>((($city['moduleType']>>2)==277)?'1':'0')*-/
+    		);
+    	}
+    }
+    */
     
 }
 
