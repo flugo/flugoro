@@ -19,7 +19,7 @@ class IrsBase extends CFormModel {
     public function setRequestApi($arrayparams){
       $arrayparams = array_merge( $arrayparams , $this->defaul);
         
-      $run_one = Yii::app()->curl->run('http://zborv2.zbor.md/api2.php',$arrayparams);
+      $run_one = Yii::app()->curl->run('***',$arrayparams);
 
       if (!$run_one->hasErrors()){
        return json_decode($run_one->getData(),true);
