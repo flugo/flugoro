@@ -1,10 +1,9 @@
 nbproject/
+.settings
+.project
+.buildpath
+
 .idea
 
-
-assets/*
-!assets/.gitignore
-protected/config/connections.php
-protected/runtime/*
-!protected/runtime/.gitignore
+/assets
 protected/data/*.db
