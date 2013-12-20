@@ -51,7 +51,7 @@ return CMap::mergeArray(
                         'tablePrefix'=>'f_'
 		),
 		*/
-                'curl' => array(
+        'curl' => array(
                     'class' => 'application.extensions.curl.Curl',
                     'options'=>array(
                      'setOptions'=>array(
@@ -81,5 +81,6 @@ return CMap::mergeArray(
 			),
 		),
 	),
+	'params'=>require_once(dirname(__FILE__).'/settings-api.php'),
     )
 );
