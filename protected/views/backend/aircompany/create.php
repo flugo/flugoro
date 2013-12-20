@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h4>Crearea descrierii a unei companii aeriene</h4>
+<h3>Creare descriere</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

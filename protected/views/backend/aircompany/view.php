@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h3><?php echo $model->title; ?></h3>
+<h3>Vizualizare descriere: <?php echo $model->title; ?></h3>
 
 <div class="row">
     <div class="col-lg-12">

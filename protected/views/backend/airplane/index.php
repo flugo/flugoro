@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Airplane Descs',
+	'Descrieri avioane',
 );
 
 $this->menu=array(
-	array('label'=>'Create AirplaneDesc', 'url'=>array('create')),
-	array('label'=>'Manage AirplaneDesc', 'url'=>array('admin')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Airplane Descs</h1>
+<h3>Descriere avioane</h3>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

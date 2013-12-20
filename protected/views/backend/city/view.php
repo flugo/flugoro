@@ -3,20 +3,20 @@
 /* @var $model CityDesc */
 
 $this->breadcrumbs=array(
-	'City Descs'=>array('index'),
+	'Descrieri orase'=>array('index'),
 	$model->title,
 );
 
 $this->menu=array(
-	array('label'=>'List CityDesc', 'url'=>array('index')),
-	array('label'=>'Create CityDesc', 'url'=>array('create')),
-	array('label'=>'Update CityDesc', 'url'=>array('update', 'id'=>$model->cid)),
-	array('label'=>'Delete CityDesc', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cid),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage CityDesc', 'url'=>array('admin')),
+	array('label'=>'Lisa descrierilor', 'url'=>array('index')),
+	array('label'=>'Creaza o descriere noua', 'url'=>array('create')),
+	array('label'=>'Modifica descrierea', 'url'=>array('update', 'id'=>$model->cid)),
+	array('label'=>'Sterge descrierea', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cid),'confirm'=>'Esti sigur ca doresti sa stergi?')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View CityDesc #<?php echo $model->cid; ?></h1>
+<h1>Vizualizare descriere: <?php echo $model->title; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

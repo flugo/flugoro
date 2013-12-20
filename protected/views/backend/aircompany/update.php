@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h4>Editare descriere companie aeriana  <?php $model->title; ?> (ID: <?php echo $model->cid; ?>)</h4>
+<h3>Editare descriere:  <?php $model->title; ?></h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

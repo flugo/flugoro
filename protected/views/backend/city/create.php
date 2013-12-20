@@ -3,16 +3,16 @@
 /* @var $model CityDesc */
 
 $this->breadcrumbs=array(
-	'City Descs'=>array('index'),
-	'Create',
+	'Descrieri orase'=>array('index'),
+	'Adaugare',
 );
 
 $this->menu=array(
-	array('label'=>'List CityDesc', 'url'=>array('index')),
-	array('label'=>'Manage CityDesc', 'url'=>array('admin')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create CityDesc</h1>
+<h3>Creaza descriere noua</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

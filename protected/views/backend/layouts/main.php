@@ -13,9 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/jquery.min.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/jquery.mint.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/jquery.jcrop.min.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/script.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/css/bootstrap.min.css" />
@@ -24,6 +26,7 @@
     <!-- Add custom CSS here -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/css/sb-admin.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/css/jquery.jcrop.min.css" />
     <!-- Page Specific CSS -->
 
 </head>
@@ -42,7 +45,7 @@
             <span class="icon-bar"></span>
         </button>
         <?php
-            echo CHtml::link('FLUGO',array('/dashboard/index'), array('class'=>'navbar-brand'));
+            echo CHtml::link('FLUGO',array('/dashboard'), array('class'=>'navbar-brand'));
         ?>
     </div>
 
@@ -51,13 +54,13 @@
         <?php $this->widget('zii.widgets.CMenu',array(
             'htmlOptions' => array( 'class' => 'nav navbar-nav side-nav'),
             'items'=>array(
-                array('label' => '<i class="glyphicon glyphicon-dashboard"></i> Acasa', 'url'=>array('/dashboard/index')),
-                array('label' => '<i class="glyphicon glyphicon-briefcase"></i> Oferte', 'url'=>array('/offers/index')),
-                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Tari', 'url'=>array('/country/index')),
-                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Orase', 'url'=>array('/city/index')),
-                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Aeroporturi', 'url'=>array('/airport/index')),
-                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Companii Aeriene', 'url'=>array('/aircompany/index')),
-                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Avioane', 'url'=>array('/airplane/index')),
+                array('label' => '<i class="glyphicon glyphicon-dashboard"></i> Acasa', 'url'=>array('/dashboard')),
+                array('label' => '<i class="glyphicon glyphicon-briefcase"></i> Oferte', 'url'=>array('/offers')),
+                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Tari', 'url'=>array('/country')),
+                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Orase', 'url'=>array('/city')),
+                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Aeroporturi', 'url'=>array('/airport')),
+                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Companii Aeriene', 'url'=>array('/aircompany')),
+                array('label' => '<i class="glyphicon glyphicon-book"></i> Descrieri Avioane', 'url'=>array('/airplane')),
             ),
             'encodeLabel'=>false,
         )); ?>

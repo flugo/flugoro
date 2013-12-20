@@ -3,13 +3,13 @@
 /* @var $model CityDesc */
 
 $this->breadcrumbs=array(
-	'City Descs'=>array('index'),
-	'Manage',
+	'Descrieri orase'=>array('index'),
+	'Administrare',
 );
 
 $this->menu=array(
-	array('label'=>'List CityDesc', 'url'=>array('index')),
-	array('label'=>'Create CityDesc', 'url'=>array('create')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,12 +26,11 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage City Descs</h1>
+<h3>Administrare descrieri orase</h3>
 
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
+<div class="alert alert-info">
+    <i class="glyphicon glyphicon-info-sign"></i> Optional puteti utiliza un operator de comparare (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b> sau <b>=</b>) la inceputul fiecarii valori cautate pentru a specifica care comparare trebuie facuta.
+</div>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">

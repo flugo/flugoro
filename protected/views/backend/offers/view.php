@@ -16,7 +16,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Offers #<?php echo $model->oid; ?></h1>
+<h3>Vizualizare oferta: <?php echo $model->title; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

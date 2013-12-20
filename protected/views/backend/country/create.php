@@ -3,16 +3,16 @@
 /* @var $model CountryDesc */
 
 $this->breadcrumbs=array(
-	'Country Descs'=>array('index'),
-	'Create',
+	'Descriere tari'=>array('index'),
+	'Adaugare',
 );
 
 $this->menu=array(
-	array('label'=>'List CountryDesc', 'url'=>array('index')),
-	array('label'=>'Manage CountryDesc', 'url'=>array('admin')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create CountryDesc</h1>
+<h3>Creare descriere</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

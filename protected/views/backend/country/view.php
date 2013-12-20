@@ -3,20 +3,20 @@
 /* @var $model CountryDesc */
 
 $this->breadcrumbs=array(
-	'Country Descs'=>array('index'),
+	'Descriere tari'=>array('index'),
 	$model->title,
 );
 
 $this->menu=array(
-	array('label'=>'List CountryDesc', 'url'=>array('index')),
-	array('label'=>'Create CountryDesc', 'url'=>array('create')),
-	array('label'=>'Update CountryDesc', 'url'=>array('update', 'id'=>$model->cid)),
-	array('label'=>'Delete CountryDesc', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cid),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage CountryDesc', 'url'=>array('admin')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
+	array('label'=>'Editeaza descrierea', 'url'=>array('update', 'id'=>$model->cid)),
+	array('label'=>'Sterge descrierea', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cid),'confirm'=>'Esti sigur ca doresti sa stergi?')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View CountryDesc #<?php echo $model->cid; ?></h1>
+<h3>Vizualizare descriere: <?php echo $model->title; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

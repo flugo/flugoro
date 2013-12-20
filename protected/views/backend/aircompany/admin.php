@@ -27,7 +27,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h4>Administrare descrieri companii aeriene</h4>
+<h3>Administrare descrieri companii aeriene</h3>
 
 <div class="alert alert-info">
 <i class="glyphicon glyphicon-info-sign"></i> Optional puteti utiliza un operator de comparare (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b> sau <b>=</b>) la inceputul fiecarii valori cautate pentru a specifica care comparare trebuie facuta.

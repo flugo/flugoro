@@ -3,19 +3,19 @@
 /* @var $model AirportDesc */
 
 $this->breadcrumbs=array(
-	'Airport Descs'=>array('index'),
+	'Descriere aeroporturi'=>array('index'),
 	$model->title=>array('view','id'=>$model->cid),
-	'Update',
+	'Editare',
 );
 
 $this->menu=array(
-	array('label'=>'List AirportDesc', 'url'=>array('index')),
-	array('label'=>'Create AirportDesc', 'url'=>array('create')),
-	array('label'=>'View AirportDesc', 'url'=>array('view', 'id'=>$model->cid)),
-	array('label'=>'Manage AirportDesc', 'url'=>array('admin')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
+	array('label'=>'Vizualizeaza descrierea', 'url'=>array('view', 'id'=>$model->cid)),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update AirportDesc <?php echo $model->cid; ?></h1>
+<h3>Editare descriere: <?php echo $model->title; ?></h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

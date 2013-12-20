@@ -3,19 +3,19 @@
 /* @var $model CityDesc */
 
 $this->breadcrumbs=array(
-	'City Descs'=>array('index'),
+	'Descrieri orase'=>array('index'),
 	$model->title=>array('view','id'=>$model->cid),
-	'Update',
+	'Editare',
 );
 
 $this->menu=array(
-	array('label'=>'List CityDesc', 'url'=>array('index')),
-	array('label'=>'Create CityDesc', 'url'=>array('create')),
-	array('label'=>'View CityDesc', 'url'=>array('view', 'id'=>$model->cid)),
-	array('label'=>'Manage CityDesc', 'url'=>array('admin')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
+	array('label'=>'Vizualizeaza descrierea', 'url'=>array('view', 'id'=>$model->cid)),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update CityDesc <?php echo $model->cid; ?></h1>
+<h3>Editare descriere: <?php echo $model->title; ?></h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

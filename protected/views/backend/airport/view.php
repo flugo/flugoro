@@ -3,20 +3,20 @@
 /* @var $model AirportDesc */
 
 $this->breadcrumbs=array(
-	'Airport Descs'=>array('index'),
+	'Descriere aeroporturi'=>array('index'),
 	$model->title,
 );
 
 $this->menu=array(
-	array('label'=>'List AirportDesc', 'url'=>array('index')),
-	array('label'=>'Create AirportDesc', 'url'=>array('create')),
-	array('label'=>'Update AirportDesc', 'url'=>array('update', 'id'=>$model->cid)),
-	array('label'=>'Delete AirportDesc', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cid),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage AirportDesc', 'url'=>array('admin')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
+	array('label'=>'Editeaza descrierea', 'url'=>array('update', 'id'=>$model->cid)),
+	array('label'=>'Sterge descrierea', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cid),'confirm'=>'Esti sigur ca doresti sa stergi?')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View AirportDesc #<?php echo $model->cid; ?></h1>
+<h3>Vizualizare descriere: <?php echo $model->title; ?></h3>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

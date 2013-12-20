@@ -28,7 +28,10 @@ class OffersController extends BackEndController
 	 */
 	public function actionCreate()
 	{
-		$model=new Offers;
+		$model = new Offers;
+
+        if($model->date_from == '') $model->date_from = date('Y-m-d');
+        if($model->date_to == '') $model->date_to = date('Y-m-d');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -52,7 +55,10 @@ class OffersController extends BackEndController
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+		$model = $this->loadModel($id);
+
+        if($model->date_from == '') $model->date_from = date('Y-m-d');
+        if($model->date_to == '') $model->date_to = date('Y-m-d');
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);

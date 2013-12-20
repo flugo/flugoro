@@ -3,16 +3,16 @@
 /* @var $model AirportDesc */
 
 $this->breadcrumbs=array(
-	'Airport Descs'=>array('index'),
-	'Create',
+	'Descriere aeroporturi'=>array('index'),
+	'Adaugare',
 );
 
 $this->menu=array(
-	array('label'=>'List AirportDesc', 'url'=>array('index')),
-	array('label'=>'Manage AirportDesc', 'url'=>array('admin')),
+	array('label'=>'Lista descrierilor', 'url'=>array('index')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create AirportDesc</h1>
+<h3>Creare descriere</h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

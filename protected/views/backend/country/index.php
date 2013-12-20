@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Country Descs',
+	'Descriere tari',
 );
 
 $this->menu=array(
-	array('label'=>'Create CountryDesc', 'url'=>array('create')),
-	array('label'=>'Manage CountryDesc', 'url'=>array('admin')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Country Descs</h1>
+<h3>Descrieri tari</h3>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

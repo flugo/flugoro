@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h4>Editare oferta <?php echo $model->title; ?></h4>
+<h3>Editare oferta: <?php echo $model->title; ?></h3>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

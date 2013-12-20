@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'City Descs',
+	'Descrieri orase',
 );
 
 $this->menu=array(
-	array('label'=>'Create CityDesc', 'url'=>array('create')),
-	array('label'=>'Manage CityDesc', 'url'=>array('admin')),
+	array('label'=>'Creaza descriere noua', 'url'=>array('create')),
+	array('label'=>'Administrare descrieri', 'url'=>array('admin')),
 );
 ?>
 
-<h1>City Descs</h1>
+<h3>Descrieri orase</h3>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
