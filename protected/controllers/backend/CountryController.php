@@ -27,17 +27,19 @@ class CountryController extends BackEndController
 	 */
 	public function actionCreate()
 	{
-		$model=new CountryDesc;
+		$model = new CountryDesc;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['CountryDesc']))
 		{
-			$model->attributes=$_POST['CountryDesc'];
+			$model->attributes = $_POST['CountryDesc'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->cid));
 		}
+        if( empty($model->attributes['image']) || empty($model->image))
+            $model->image = '/uploads/no-image.jpg';
 
 		$this->render('create',array(
 			'model'=>$model,

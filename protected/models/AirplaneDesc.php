@@ -57,14 +57,14 @@ class AirplaneDesc extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cid' => 'Cid',
-			'airplaneid' => 'Airplaneid',
-			'title' => 'Title',
-			'slug' => 'Slug',
-			'description' => 'Description',
-			'content' => 'Content',
-			'image' => 'Image',
-			'status' => 'Status',
+			'cid' => 'ID',
+			'airplaneid' => 'ID Avion',
+            'title' => 'Titlul descrierii',
+            'slug' => 'Url descriere',
+            'description' => 'Descriere scurta',
+            'content' => 'Continut',
+            'image' => 'Imagine',
+            'status' => 'Status',
 		);
 	}
 

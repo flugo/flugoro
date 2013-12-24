@@ -16,8 +16,9 @@
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/jquery.mint.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/tinymce/tinymce.min.js"></script>
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/jquery.jcrop.min.js"></script>
-    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/script.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/uploadify/jquery.uploadify.min.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/fc-cropresizer.js"></script>
+    <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/backend/js/file_upload.js"></script>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/css/bootstrap.min.css" />
@@ -26,12 +27,14 @@
     <!-- Add custom CSS here -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/css/sb-admin.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/css/jquery.jcrop.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/uploadify/uploadify.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/backend/css/fc-cropresizer.css" />
+
     <!-- Page Specific CSS -->
 
 </head>
 
-<body>
+<body onSelectStart="return false;">
 
 <div id="wrapper">
 
@@ -95,8 +98,19 @@
 
 </div><!-- /#wrapper -->
 
+<?php
+    $timestamp = time();
+    $token = md5('unique_salt' . $timestamp);
+?>
+
 <!-- JavaScript -->
 <script type="text/javascript">
+    // define the baseURL for ajax scripts
+    var baseURL = '<?php echo Yii::app()->request->baseUrl;?>';
+
+    var __TIMESTAMP__ = '<?php echo $timestamp; ?>';
+    var __TOKEN__ = '<?php echo $token; ?>';
+
     tinymce.init({
         selector: ".tiny-textarea"
     });

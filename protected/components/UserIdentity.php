@@ -8,7 +8,7 @@ class UserIdentity extends CUserIdentity
     }
 
     public static function checkIP($ip){
-        $ip_list = array('127.0.0.1');
+        $ip_list = array('127.0.0.1', '192.168.1.101');
         return   in_array($ip,$ip_list);
     }
 
