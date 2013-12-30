@@ -35,22 +35,15 @@ class AircompanyController extends BackEndController
 
 		if(isset($_POST['AircompanyDesc']))
 		{
-            // file handling
-            $imageUploadFile = CUploadedFile::getInstance($model, 'image');
-            if($imageUploadFile !== null){ // only do if file is really uploaded
-                $imageFileName = '/uploads/'.date('YmdHis').'_'.$imageUploadFile->name;
-                $model->image = $imageFileName;
-            } else {
-                $model->image = '/uploads/no_image.png';
-            }
 
 			$model->attributes=$_POST['AircompanyDesc'];
 			if($model->save()){
-                if($imageUploadFile !== null) // validate to save file
-                    $imageUploadFile->saveAs(ROOT_PATH . $imageFileName);
 				$this->redirect(array('view','id'=>$model->cid));
             }
 		}
+
+        if( empty($model->attributes['image']) || empty($model->image))
+            $model->image = '/uploads/no-image.jpg';
 
 		$this->render('create',array(
 			'model'=>$model,

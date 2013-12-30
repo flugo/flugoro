@@ -102,27 +102,31 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-lg-9">
+                    <div class="col-lg-12">
                         <center>
-                            <img id="image_preview" />
-                        </center>
-                    </div>
-                    <div class="col-lg-3">
-                        <center>
-                            <input type="file" name="file_upload" id="file_upload" />
-                            <input type="hidden" id="image_filename" value="" />
-
-                            <div class="btn-group-vertical" style="text-align: left;">
-                                <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-fullscreen"></i > Crop</button>
-                                <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-retweet"></i> Resize</button>
-                                <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-retweet"></i> Rotate</button>
-                                <button type="button" class="btn btn-default"><i class="glyphicon glyphicon-transfer"></i> Flip</button>
+                            <div>
+                                <div>
+                                    <input id="sizer" type="range" min="400" max="400" />
+                                </div>
+                                <div style="position:relative;">
+                                    <img id="outputImage" src="<?php echo Yii::app()->request->baseUrl.$model->image; ?>" />
+                                </div>
+                                <div id="upload" >
+                                    <span id="status" ></span>
+                                 </div>
+                            </div>
+                            <div class="btn-group image_actions">
+                                <button id="img_action_crop" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-th-large"></i > Crop</button>
+                                <button id="img_action_resize" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-move"></i> Resize</button>
+                                <button id="img_action_flip" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-transfer"></i> Flip</button>
+                                <button id="img_action_upload" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-transfer"></i> Upload</button>
                             </div>
                         </center>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
+                <input type="hidden" id="image_filename" value="" />
                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-ban-circle"></i> Cancel</button>
                 <button type="button" id="accept_image" class="btn btn-primary"><i class="glyphicon glyphicon-check"></i> Acepta imaginea</button>
             </div>

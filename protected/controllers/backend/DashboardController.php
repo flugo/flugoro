@@ -27,7 +27,7 @@ class DashboardController extends BackEndController
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
+		// renders the view file 'protected/views/dashboard/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
