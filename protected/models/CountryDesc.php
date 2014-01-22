@@ -57,14 +57,14 @@ class CountryDesc extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cid' => 'Cid',
-			'countryid' => 'Countryid',
-			'title' => 'Title',
-			'slug' => 'Slug',
-			'description' => 'Description',
-			'content' => 'Content',
-			'image' => 'Image',
-			'status' => 'Status',
+			'cid' => 'ID',
+			'countryid' => 'ID Tara',
+            'title' => 'Titlul descrierii',
+            'slug' => 'Url descriere',
+            'description' => 'Descriere scurta',
+            'content' => 'Continut',
+            'image' => 'Imagine',
+            'status' => 'Status',
 		);
 	}
 

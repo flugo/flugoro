@@ -60,44 +60,20 @@
 
     </div>
     <div class="col-lg-6">
-        <!-- hidden crop params -->
-        <input type="hidden" id="x1" name="x1" />
-        <input type="hidden" id="y1" name="y1" />
-        <input type="hidden" id="x2" name="x2" />
-        <input type="hidden" id="y2" name="y2" />
-
 
         <div class="panel panel-default">
-            <!-- Default panel contents -->
             <div class="panel-heading"><?php echo $form->labelEx($model,'image'); ?></div>
             <div class="panel-body">
-                <div class="error"><?php echo $form->error($model,'image'); ?></div>
-                <div class="image_preview">
-                    <div class="thumbnail">
-                        <img id="preview" src="<?php if($model->isNewRecord && $model->image == ''){
-                            echo Yii::app()->request->baseUrl.'/uploads/no-image.jpg';
-                        } else{
-                            echo Yii::app()->request->baseUrl.$model->image;
-                        }?>" />
-                    </div>
-                    <div class="image_info">
-                        <table class="table">
-                            <tr>
-                                <th>File size</th><th>Type</th><th>Dimension</th><th>W</th><th>H</th>
-                            </tr>
-                            <tr>
-                                <td><input type="text" id="filesize" name="filesize" /></td>
-                                <td><input type="text" id="filetype" name="filetype" /></td>
-                                <td><input type="text" id="filedim" name="filedim" /></td>
-                                <td><input type="text" id="w" name="w" /></td>
-                                <td><input type="text" id="h" name="h" /></td>
-                            </tr>
-                        </table>
-                    </div>
+                <div id="image-prewiew">
+                    <img id="preview" src="<?php echo Yii::app()->request->baseUrl.$model->image; ?>" />
+                    <?php echo $form->hiddenField($model,'image',array('class'=>'model_image')); ?>
                 </div>
             </div>
-            <div class="panel-footer"><?php echo $form->fileField($model,'image',array('class' => 'form-control image_file')); ?></div>
+            <div class="panel-footer">
+                <button type="button" id="change-image" class="btn btn-primary">Schimba</button>
+            </div>
         </div>
+
     </div>
 </div>
 <div class="row">
@@ -116,3 +92,45 @@
     </div>
 </div>
 <?php $this->endWidget(); ?>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-window">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Selectarea si prelucrarea imaginii</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <center>
+                            <div>
+                                <div>
+                                    <input id="sizer" type="range" min="400" max="400" />
+                                </div>
+                                <div style="position:relative;">
+                                    <img id="outputImage" src="<?php echo Yii::app()->request->baseUrl.$model->image; ?>" />
+                                </div>
+                                <div id="upload" >
+                                    <span id="status" ></span>
+                                </div>
+                            </div>
+                            <div class="btn-group image_actions">
+                                <button id="img_action_crop" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-th-large"></i > Crop</button>
+                                <button id="img_action_resize" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-move"></i> Resize</button>
+                                <button id="img_action_flip" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-transfer"></i> Flip</button>
+                                <button id="img_action_upload" type="button" class="btn btn-primary"><i class="glyphicon glyphicon-transfer"></i> Upload</button>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input type="hidden" id="image_filename" value="" />
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="glyphicon glyphicon-ban-circle"></i> Cancel</button>
+                <button type="button" id="accept_image" class="btn btn-primary"><i class="glyphicon glyphicon-check"></i> Acepta imaginea</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

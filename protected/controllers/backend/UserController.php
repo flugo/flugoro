@@ -14,6 +14,7 @@ Class UserController extends BackEndController{
     public function actionLogin()
     {
         $model=new LoginForm;
+		// check if current user IP is in allowed IP list
         if($model->checkIP($_SERVER['REMOTE_ADDR'])){
         // if it is ajax validation request
         if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')

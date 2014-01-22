@@ -61,7 +61,7 @@ class AircompanyDesc extends CActiveRecord
 	{
 		return array(
 			'cid' => 'Cid',
-			'aircompanyid' => 'Compania aeriana',
+			'aircompanyid' => 'ID Companie aeriana',
 			'title' => 'Titlul descrierii',
 			'slug' => 'Url descriere',
 			'description' => 'Descriere scurta',

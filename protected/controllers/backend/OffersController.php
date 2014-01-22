@@ -42,6 +42,8 @@ class OffersController extends BackEndController
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->oid));
 		}
+        if( empty($model->attributes['image']) || empty($model->image))
+            $model->image = '/uploads/no-image.jpg';
 
 		$this->render('create',array(
 			'model'=>$model,

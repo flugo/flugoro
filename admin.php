@@ -1,5 +1,6 @@
 <?php
 /**
+ * Admin Entry Point
  * Project: flugo
  * Author: Catirau Mihail
  * Date: 11.12.13
